@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matthew Dumag</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="container">
+        <div class="mainlogo">
+          <a href="index.html">
+            <img src="./Images/mainlogo.png" alt="Main Logo" style="width:60px;height:60px;">
+          </a>
+        </div>
+        <div class = "barmenu">
+          <nobr>
+
+          <a href="#about"> About </a>
+          <b>
+            |
+          </b>
+
+          <ul class="links">
+            <li class="dropdown">
+
+              <a href="javascript:void(0)" class="dropbtn">
+                 Resume 
+              </a>
+              <b>
+                |
+              </b>
+
+              <div class="dropdown-content">
+                <a href="https://www.linkedin.com/in/mdumag18/" target="_blank">LinkedIn</a>
+              </div>
+
+            </li>
+          </ul>
+
+          <ul class="links">
+            <li class="dropdown">
+
+              <a href="javascript:void(0)" class="dropbtn">
+                 Media 
+              </a>
+              <b>
+                |
+              </b>
+
+              <div class="dropdown-content">
+                <a href=https://open.spotify.com/artist/2WCEuuNsXAgA0cfK9KMLP7 target="_blank">Spotify</a>
+                <a href=https://soundcloud.com/mattidnaps target="_blank">SoundCloud</a>
+                <a href=https://www.depop.com/mattelier target="_blank">Store</a>
+                <a href=https://www.youtube.com/channel/UC10N_nFl22UcJy0datDzWPA target="_blank">Youtube</a>
+              </div>
+
+            </li>
+          </ul>
+
+          <ul class="links">
+            <li class="dropdown">
+
+              <a href="javascript:void(0)" class="dropbtn">
+                 Code 
+              </a>
+              <b>
+                |
+              </b>
+
+              <div class="dropdown-content">
+                <a href="https://github.com/mdumag" target="_blank">Github </a>
+                <a href="https://www.hackerrank.com/mtthwdmg" target="_blank">Hackerrank</a>
+              </div>
+
+            </li>
+          </ul>
+
+          <ul class="links">
+            <li class="dropdown">
+
+              <c href="javascript:void(0)" class="dropbtn">
+                 Contact
+              </c>
+
+              <div class="dropdown-content">
+                <a href="mailto:mtthwdmg@gmail.com?subject=Interest/Query via Website">Email</a>
+                <a href="mailto:mtthwdmg@gmail.com?subject=Interest in Tutoring Services">Tutoring</a> 
+              </div>
+
+            </li>
+          </ul>
+        </nobr>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+
+
+
+
+
+
+  <main>
+    <div class="container appear2">
+    <div class ="greeting">
+
+
+      <h1>
+        Hi, I'm Matthew
+      </h1>
+
+
+       <h2>I'm a multi-faceted Developer & Designer based in California. 
+       </h2>
+    </div>
+    <div class="item">
+    <div class="slideshow-container">
+      <div class="slide">
+        <img src="./Images/nasapic.jpg" alt="Image 1">
+      </div>
+      <div class="slide">
+        <img src="./Images/musicdata.jpg" alt="Image 2">
+      </div>
+      <div class="slide">
+        <img src="./Images/yellow-river.jpeg" alt="Image 3">
+      </div>
+
+      <div class="dot-indicators">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      </div>
+    </div>
+
+
+    <script>
+
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var slides = document.getElementsByClassName("slide");
+        var dots = document.getElementsByClassName("dot");
+
+        for (var i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+
+        slideIndex++;
+
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+
+        for (var i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+
+        setTimeout(showSlides, 10000); // Change slide every 10 seconds
+      }
+    </script>
+    </div>
+    <script>
+      const appear2 = document.querySelector('.appear2'); 
+      const cb2 = function(entries){
+        entries.forEach(entry => {
+          if(entry.isIntersecting){
+            entry.target.classList.add('inview2');
+          }else{
+            entry.target.classList.remove('inview2');
+          }
+        });
+      }
+      const io2 = new IntersectionObserver(cb2);
+      io2.observe(appear2);
+    </script>
+
+    <div class="container appear">
+    <div class="infobody">
+      <hr>
+      
+        <div class="item">
+        <h2>Experience</h2>
+        <p1>
+          My formal education includes an Associates Degrees in Mathematics, Math & Natural Sciences and Physics and I am currently en route to a degree in Computer Science from Cal Poly. My experiences span from Education, Aerospace, and Medical Technology to Music and Social Media. However, it is the social, design, and leadership experiences that help create a holistic view of what I have to offer.
+        </p1>
+        </div>
+
+        <hr>
+        <div class="item">
+        <h2>Goal Statement</h2>
+        </div>
+
+        <div class="item">
+        <h3>Professional and Academic Goals</h3>
+        <p2>Professionally, I hope to enter the Industry and ultimately enter a mutually beneficial professional relationship in which I gain skills and build a repertoire under a company that can use my abilities. I desire a sort of flexibility that allows me to continue my education. I hope to work towards a Masters in Data Science, and an eventual PHD and teaching credentials. My goal towards the end of my industrial career is to profess in the field of Information and Mathematics.</p2>
+        </div> 
+
+        <hr>
+      </div>
+    </div>
+
+    <script>
+      const appear = document.querySelector('.appear'); 
+      const cb = function(entries){
+        entries.forEach(entry => {
+          if(entry.isIntersecting){
+            entry.target.classList.add('inview');
+          }else{
+            entry.target.classList.remove('inview');
+          }
+        });
+      }
+      const io = new IntersectionObserver(cb);
+      io.observe(appear);
+    </script>
+
+  </main>
+
+  <footer>
+  </footer>
+</body>
+</html>

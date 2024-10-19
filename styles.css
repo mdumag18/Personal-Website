@@ -1,0 +1,255 @@
+* {
+  background-color: white;
+}
+
+header {
+  display:inline;
+  background-color: white;
+  color: black;
+  padding: 0 px;
+  margin: 0 px;
+  border: 0 px;
+}
+
+.container {
+  background-color: white;
+  margin: 0px;
+  padding: 0px;
+  border: 0 px;
+}
+
+.links {
+  height: 60px;
+  margin: 0 5 px;
+  padding: 0px;
+  list-style: none;
+  display:inline-block;
+  horizontal-align:center;
+}
+
+.links li {
+  margin: 0px;
+}
+
+.links li a {
+  color: black;
+  text-decoration: none;
+}
+
+.links li a:hover {
+    background-color: white;
+    color: darkgoldenrod;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 90px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.barmenu {
+  width: 40%;
+  height: 60px;
+  margin: 10px;
+  padding: 10 px;
+  display:inline-block;
+  vertical-align: center;
+  horizontal-align:center;
+  align-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: lighter;
+}
+
+.barmenu a:active, a:link, a:visited{
+  text-decoration: none;
+  color: darkslateblue;
+}
+
+.barmenu c{
+  color : red;
+}
+
+.barmenu c:hover{
+  color: navy;
+}
+
+.barmenu a:hover{
+  text-decoration: none;
+  color: darkgoldenrod;
+}
+
+.barmenu b{
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: lighter;
+}
+
+.mainlogo{
+  width: 40%;
+  height: 60px;
+
+  padding-left: 10px;
+  display:inline-block;
+  float: left;
+  horizontal-align:center;
+  vertical-align: center;
+}
+
+main{
+    background-color: white;
+    margin: 0;
+}
+
+.greeting h1 {
+  background-color: white;
+  width: 75%;
+  font-family: 'Raleway';
+  font-style: normal; 
+  font-variant: normal; 
+  line-height: 70px; 
+  padding: 15px;
+  color: black;
+  font-size: 65px;
+  font-weight: bolder;
+  text-align: left;
+}
+
+.greeting h2 {
+  background-color: white;
+  width: 75%;
+  font-family: 'Raleway';
+  font-style: normal; 
+  font-variant: normal; 
+  line-height: 70px; 
+  padding: 15px;
+  color: black;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.slideshow-container {
+  position: relative;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.dot-indicators {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #555;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #bbb;
+}
+
+.infobody {
+  background-color: white;
+  font-family: 'Raleway';
+  font-style: normal; 
+  font-variant: normal; 
+  line-height: 26px; 
+  padding: 10px;
+  color: black;
+}
+
+* { 
+  margin-inline: 0; 
+  padding-inline: 0; 
+  box-sizing: border-box; 
+}
+
+.infobody h1 {
+  font-size: 96;
+  font-weight: 400;
+  text-align: center;
+}
+
+.infobody h2 {
+  font-size: 48;
+  font-weight: 400;
+  text-align: center;
+}
+
+.infobody p1 {
+  font-size: 32;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.infobody p1 {
+  font-size: 32;
+  font-weight: lighter;
+  text-align: left;
+}
+
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  height: 0.5px;
+  color:black;
+  background-color:black;
+}
+
+.appear {
+  transition: all 0.8s;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.appear.inview {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.3s;
+}
+
+.appear2 {
+  transition: all 0.8s;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.appear2.inview2 {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.3s;
+}
