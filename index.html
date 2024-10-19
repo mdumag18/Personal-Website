@@ -6,6 +6,12 @@
   <title>Matthew Dumag</title>
   <link rel="stylesheet" href="styles.css">
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init("CyjwqOyWUE2NguOC7"); // EmailJS user ID
+    })();
+  </script>
 </head>
 <body>
   <header>
@@ -72,7 +78,7 @@
               </b>
 
               <div class="dropdown-content">
-                <a href="https://github.com/mdumag" target="_blank">Github </a>
+                <a href="https://github.com/mdumag18" target="_blank">Github </a>
                 <a href="https://www.hackerrank.com/mtthwdmg" target="_blank">Hackerrank</a>
               </div>
 
@@ -87,8 +93,7 @@
               </c>
 
               <div class="dropdown-content">
-                <a href="mailto:mtthwdmg@gmail.com?subject=Interest/Query via Website">Email</a>
-                <a href="mailto:mtthwdmg@gmail.com?subject=Interest in Tutoring Services">Tutoring</a> 
+                <a href="mailto:matthewdumag18@gmail.com?subject=Interest/Query via Website">Email</a>
               </div>
 
             </li>
@@ -128,7 +133,7 @@
         <img src="./Images/nasapic.jpg" alt="Image 1">
       </div>
       <div class="slide">
-        <img src="./Images/musicdata.jpg" alt="Image 2">
+        <img src="./Images/musicdata.png" alt="Music Data">
       </div>
       <div class="slide">
         <img src="./Images/yellow-river.jpeg" alt="Image 3">
@@ -169,7 +174,7 @@
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
 
-        setTimeout(showSlides, 10000); // Change slide every 10 seconds
+        setTimeout(showSlides, 8000); // Change slide every 8 seconds
       }
     </script>
     </div>
@@ -230,7 +235,59 @@
 
   </main>
 
-  <footer>
-  </footer>
+<footer>
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>Site Map</h3>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#goals">Goals</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Contact</h3>
+      <ul>
+        <li>Email: <a href="mailto:matthewdumag18@gmail.com">matthewdumag18@gmail.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/mdumag18/" target="_blank">Matthew Dumag</a></li>
+        <li>GitHub: <a href="https://github.com/mdumag" target="_blank">mdumag18</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Send a Message</h3>
+      <form id="contact-form">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Send</button>
+      </form>
+
+    </div>
+  </div>
+</footer>
+
+  <script type="text/javascript">
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+
+          emailjs.sendForm('service_8gkzfzz', 'template_q0k686s', this)
+          .then(function() {
+              alert('Message sent successfully!');
+          }, function(error) {
+              alert('Failed to send message, please try again.');
+          });
+      });
+  </script>
+
 </body>
 </html>
