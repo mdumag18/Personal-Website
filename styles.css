@@ -1,5 +1,12 @@
 * {
-  background-color: white;
+  box-sizing: border-box; /* Only include the box-sizing rule */
+}
+
+/* Apply white background only where needed */
+body, html {
+  background-color: white; /* Set the default background color for the page */
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -252,4 +259,82 @@ hr {
   opacity: 1;
   transform: none;
   transition-delay: 0.3s;
+}
+
+footer {
+  background-color: black; /* Black background for the footer */
+  color: white; /* White text in the footer */
+  padding: 40px 0; /* Padding around the footer */
+  font-family: 'Raleway', sans-serif; /* Font style */
+  width: 100%; /* Ensure the footer takes up full width */
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+  margin: 0 20px;
+}
+
+.footer-column h3 {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  color: darkgoldenrod;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+}
+
+form input, form textarea {
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: ghostwhite;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: gray;
 }
